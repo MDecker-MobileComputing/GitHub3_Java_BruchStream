@@ -42,8 +42,8 @@ public class Main {
     		
     		return istEchtGroesser;
     	})
-    	.forEach( System.out::println );
-    	
+    	.sorted( (b1, b2) -> b1.zaehler() - b2.zaehler() )
+    	.forEach( System.out::println );    	
     }
     
 }
