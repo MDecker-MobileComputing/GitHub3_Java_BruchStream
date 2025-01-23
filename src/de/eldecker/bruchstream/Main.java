@@ -32,6 +32,8 @@ public class Main {
      */
     public static void main( String[] args ) {
     	
+    	System.out.println();
+    	
     	final Stream<BruchRecord> bruchStream = getBruchStream();
     	
     	bruchStream.filter( bruch -> {
