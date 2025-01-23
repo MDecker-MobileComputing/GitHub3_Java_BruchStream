@@ -36,7 +36,10 @@ public class Main {
     	
     	bruchStream.filter( bruch -> {
     		
-    		double wert = 1.0 * bruch.zaehler() / bruch.nenner();
+    		double zaehler = bruch.zaehler();
+    		double nenner  = bruch.nenner();
+    		
+    		double wert = zaehler / nenner; 
     		
     		boolean istEchtGroesser = wert > 0.5;
     		
